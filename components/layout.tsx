@@ -5,7 +5,12 @@ import Link from 'next/link'
 
 const name = 'Iryna Arkhypchenko'
 export const siteTitle = 'Iryna blog'
-function Layout({ children, home }) {
+function Layout({ children, home }:
+    {
+        children: React.ReactNode
+        home?: boolean
+    }
+) {
     return (
 
         //Boolean home prop which will adjust the size of the title and the image
